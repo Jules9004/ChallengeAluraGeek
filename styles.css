@@ -1,0 +1,287 @@
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #9db9a0;
+}
+.container-nav{
+  font-family:cursive;
+  background-color: rgb(153, 172, 152);
+  display: flex;
+  padding: 20px;
+  height: 50px;
+  opacity: 9;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.brand{
+  display: flex;
+  align-items: center;
+}
+.brand img{
+  width: 20%;
+}
+.brand, a:hover{
+  color: whitesmoke;
+}
+li>a{
+  padding: 8px 24px;
+}
+li{
+  margin-left: 15px;
+  transition: 2s;
+  list-style-type: none;
+}
+a{
+  color: rgb(71, 97, 71);
+  text-decoration: none;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+}
+.nav-links li a:hover{
+  cursor: pointer;
+  color: #5f6d7f;
+  
+}
+.navbar-menu li{
+    margin-left: 15px;
+    transition: 2s;
+}
+.navbar a{
+  display: flex;
+  color:rgb(39, 45, 29);
+  font-weight: bold;
+  
+  font-size: 1.3rem;
+}
+p{
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#search-input {
+  width: 100px;
+  max-width: 300px;
+  margin-left: 10px;
+}
+
+#banner {
+  background-color: #cfbaad;
+  padding: 10px;
+  text-align: center;
+  justify-content:end;
+  min-height: 100vh;
+  background: url(images/eyeliner)no-repeat center center;
+  background-size: cover;
+  color: rgb(241, 113, 7);
+}
+
+#products-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  gap:20px ;
+  padding: 20px;
+}
+
+.product {
+  width: 280px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #f3eeee;
+  border-radius: 10%;
+}
+
+.product img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+.product:hover {
+  cursor: pointer;
+  transition: 0.5;
+  background: #e3e8ee;
+  transform: scale(1.01);
+}
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+#login-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.login-btn:hover{
+  cursor: pointer;
+  background: #5f6d7f;
+  transform: scale(1.2);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 320px;
+  position: relative;
+  border-radius: 8%;
+  border-spacing: 1ch;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute; 
+  top: 20px; 
+  right: 10px; 
+}
+#login-form{
+  width: 90%;
+}
+#login-form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#login-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button {
+  background-color: rgb(90, 110, 100);
+  width: 150px;
+  height: 40px;
+  margin: 50px ;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 15px;
+  color: white;
+  }
+.boton{
+    width: 450px;
+    height: 60px;
+  }
+#myForm{
+    margin-left: 25%;
+}
+form{
+    display: list-item;
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+}
+.img_info{
+  width: 100%;
+}
+.info_title{
+  margin-left: 45%;
+  color: #eee76d;
+}
+.info_title1{
+  margin-left: 35%;
+}
+.info_container{
+  margin-left: 35%;
+}
+.info_text{
+  margin-left: 40%;
+}
+.contact_container{
+  margin-left: 20%;
+}
+footer {
+  background-color: #f0f0f0;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #search-input {
+    margin-top: 10px;
+  }
+
+  #products-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .modal-content {
+    width: 90%; 
+  }
+}
+@media (max-width: 480px){
+  .product {
+    padding: 20px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
