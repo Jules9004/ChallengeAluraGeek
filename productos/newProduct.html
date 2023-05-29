@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>AluraGeek</title>
+</head>
+<body>
+  <header>
+    <h1>AluraGeek</h1>
+    <div class="container-nav">
+      <nav class="navbar" role="navigation">
+          <a href="/index.html" class="brand"><img src="/imag/Logo.png" alt="Logo de AluraGeek"></a>
+              <ul class="nav-links">
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/productos/productos.html">Products</a></li>
+                  <li><a href="/info.html">About</a></li>
+                  <li><a href="/contacto.html">Contact</a></li>
+              </ul>
+          </nav>
+  
+    <button id="login-btn">Iniciar sesión</button>
+  </header>
+    <section id="admin-section" style="display: flex;">
+      <h1>Agregar producto</h1>
+      <!-- <form id="add-product-form">
+        <input type="text" id="product-name" placeholder="Nombre del producto" required>
+        <input type="number" id="product-price" placeholder="Precio" required>
+        <input type="file" id="product-image" accept="image/*" required>
+         -->
+          <form id="myForm">
+          <div class="new_product">
+                  <h2 class="mb-4">Nuevo Producto</h2>
+
+                  <div class="new_product">
+                      <label for="name_field">Nombre</label>
+                      <textarea cols="70" 
+                        type="text"
+                        id="name_field"
+                        class="form-control" required></textarea>
+                  </div>
+                  <div class="new_product">
+                    <label for="name_field">Precio</label>
+                    <textarea cols="70" 
+                      type="text"
+                      id="name_field"
+                      class="form-control" required></textarea>
+                </div>
+
+                  <div class="new_product">
+                      <label htmlFor="description_field">Descripcion</label>
+                      <textarea cols="70" rows="10" className="form-control" id="description_field" rows="8" required></textarea>
+                  </div>
+
+                  </div>
+
+                  <div class="new_product">
+                      <label>Imagenes</label>
+
+                      <div className='custom-file'>
+                          <input
+                              type='file'
+                              name='product_images'
+                              className='custom-file-input'
+                              id='customFile'
+                              multiple
+                          />
+                          <label className='custom-file-label' htmlFor='customFile'>
+                              Seleccione Imagen
+                       </label>
+                      </div>
+                  </div>
+                
+                  <button
+                      id="login_button"
+                      type="submit"
+                      className="btn btn-block py-3">
+                      CREAR
+                  </button>
+
+              </form>
+          </div>
+        <!-- <button type="submit">Agregar</button>
+      </form> -->
+    </section>
+  <footer>
+    <Fragment>
+        <div class="footer">
+            <footer>
+                <p class="copyright">&copy Copyright  -  A  J  T  R  - 2023</p>
+                <p>Derechos reservados de autor</p>
+            </footer>
+        </div>
+    </Fragment>
+      <p><a href="info.html">Información adicional sobre la empresa</a></p>
+  </footer>
+  
+  <script src="/script.js"></script>
+</body>
+</html>
